@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyDown</title>
+</head>
+<body>
+    <div id="container">
+        <div id="display">Press any key :)</div>
+    </div>  
+    <script >
+        const container = document.getElementById("container")
+        const display = document.getElementById("display")
+
+        document.addEventListener("keydown", function(e){
+            display.innerText = e.key + " is key down"
+        })
+        document.addEventListener("keyup", function(e){
+            display.innerText = e.key + " is key up"
+        })
+    </script>
+</body>
+</html>
